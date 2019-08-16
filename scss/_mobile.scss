@@ -41,6 +41,21 @@
   .nav-link {
     font-size: 1rem;
   }
+
+  .about-info {
+    grid-template-areas:
+    'bioimage'
+    'bio'
+    'job1'
+    'job2'
+    'job3';
+    grid-template-columns: 1fr;
+    .job {
+      margin-left: 10%;
+      margin-right: 10%;
+
+    }
+  }
 }
 // Smartphones
 @include mediaSm {
