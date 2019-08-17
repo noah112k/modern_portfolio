@@ -106,7 +106,9 @@ body {
   margin: 0;
   height: 100%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5; }
+  line-height: 1.5;
+  opacity: 1;
+  transition: 3s opacity; }
   body#bg-img {
     background: url(../img/background.jpg);
     background-attachment: fixed;
@@ -120,6 +122,10 @@ body {
       height: 100%;
       z-index: -1;
       background: rgba(34, 34, 34, 0.8); }
+
+.fade-in {
+  opacity: 0;
+  transition: none; }
 
 h1,
 h2,
@@ -186,18 +192,53 @@ main {
   font-size: 1.5rem; }
 
 .job-1 {
-  grid-area: job1; }
+  grid-area: job1;
+  opacity: 1;
+  transition: 2s opacity; }
 
 .job-2 {
-  grid-area: job2; }
+  grid-area: job2;
+  opacity: 1;
+  transition: 2s opacity; }
 
 .job-3 {
-  grid-area: job3; }
+  grid-area: job3;
+  opacity: 1;
+  transition: 2s opacity; }
 
 .job {
   background: #2f2f2f;
   padding: 0.5rem;
   border-bottom: #89cff0 5px solid; }
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.7rem; }
+  .projects-container img {
+    width: 100%;
+    border: 3px #fff solid; }
+    .projects-container img:hover {
+      opacity: 0.5;
+      border-color: #89cff0;
+      transition: all 0.5s ease-out; }
+
+.btn, .btn-dark, .btn-light {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem; }
+  .btn:hover, .btn-dark:hover, .btn-light:hover {
+    background: #89cff0;
+    color: #000; }
+
+.btn-dark {
+  background: black;
+  color: #fff; }
+
+.btn-light {
+  background: #a2a2a2;
+  color: #333; }
 
 #main-footer {
   text-align: center;
@@ -205,6 +246,10 @@ main {
   background: #090909;
   color: #fff;
   height: 60px; }
+
+@media screen and (min-width: 1171px) {
+  .projects-container {
+    grid-template-columns: repeat(4, 1fr); } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -239,8 +284,12 @@ main {
     grid-template-columns: 1fr; }
     .about-info .job {
       margin-left: 10%;
-      margin-right: 10%; } }
+      margin-right: 10%; }
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
-    margin-top: 10vh; } }
+    margin-top: 10vh; }
+  .projects-container {
+    grid-template-columns: 1fr; } }
