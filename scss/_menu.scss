@@ -88,7 +88,6 @@
     background-size: cover;
     border-radius: 50%;
     border: solid 3px $secondary-color;
-    transform: rotate(90deg);
     opacity: 1;
   }
   .nav-item {
@@ -126,4 +125,3 @@
     transition-delay: $x * 0.1s;
   }
 }
-

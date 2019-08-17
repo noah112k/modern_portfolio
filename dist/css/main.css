@@ -62,7 +62,6 @@
     background-size: cover;
     border-radius: 50%;
     border: solid 3px #89cff0;
-    transform: rotate(90deg);
     opacity: 1; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
