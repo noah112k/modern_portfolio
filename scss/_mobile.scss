@@ -16,6 +16,7 @@
     .lg-heading {
       line-height: 1;
       margin-bottom: 1rem;
+      font-size: 4rem;
     }
   }
   div.menu-branding,
@@ -58,7 +59,17 @@
       margin-right: 10%;
 
     }
-  }
+    }
+    //Added to keep the contact text from wrapping weirdly
+    .boxes {
+      div {
+        font-size: 1rem;
+        &:hover {
+          padding: 1rem 1.5rem;
+        }
+      }
+    }
+  
 
   .projects-container {
     grid-template-columns: repeat(2, 1fr);

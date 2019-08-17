@@ -1,8 +1,5 @@
 window.onload = function() {
   document.querySelector("body").classList.remove("fade-in");
-  document.querySelector(".job-1").classList.remove('fade-in');
-  document.querySelector(".job-2").classList.remove('fade-in');
-  document.querySelector(".job-3").classList.remove('fade-in');
 };
 
 //Select DOM Items
