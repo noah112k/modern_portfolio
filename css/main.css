@@ -16,13 +16,13 @@
     .menu-btn.close .menu-line:nth-child(1) {
       transform: rotate(45deg) translate(12px, 12.5px);
       height: 5px;
-      background: #89cff0; }
+      background: #ff6700; }
     .menu-btn.close .menu-line:nth-child(2) {
       background: rgba(255, 255, 255, 0); }
     .menu-btn.close .menu-line:nth-child(3) {
       transform: rotate(135deg);
       height: 5px;
-      background: #89cff0; }
+      background: #ff6700; }
 
 .menu {
   position: fixed;
@@ -58,9 +58,8 @@
   .menu .portrait {
     width: 250px;
     height: 250px;
-    background-size: cover;
     border-radius: 50%;
-    border: solid 3px #89cff0;
+    border: solid 3px #ff6700;
     opacity: 1; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
@@ -68,7 +67,7 @@
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #89cff0; }
+      color: #ff6700; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -81,7 +80,7 @@
     transition: all 0.5s ease-out;
     font-weight: 300; }
     .menu .nav-link:hover {
-      color: #89cff0; }
+      color: #ff6700; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -112,7 +111,7 @@ body {
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       right: 0;
@@ -150,7 +149,7 @@ header {
   z-index: 2; }
 
 .text-secondary {
-  color: #89cff0; }
+  color: #ff6700; }
 
 main {
   padding: 4rem;
@@ -160,7 +159,7 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #89cff0;
+        color: #ff6700;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
@@ -177,7 +176,7 @@ main {
   grid-area: bioimage;
   margin: auto;
   border-radius: 50%;
-  border: #89cff0 3px solid; }
+  border: #ff6700 3px solid; }
 
 .about-info {
   display: grid;
@@ -207,7 +206,7 @@ main {
 .job {
   background: #2f2f2f;
   padding: 0.5rem;
-  border-bottom: #89cff0 5px solid; }
+  border-bottom: #ff6700 5px solid; }
 
 .projects-container {
   display: grid;
@@ -218,7 +217,7 @@ main {
     border: 3px #fff solid; }
     .projects-container img:hover {
       opacity: 0.5;
-      border-color: #89cff0;
+      border-color: #ff6700;
       transition: all 0.5s ease-out; }
 
 .btn, .btn-dark, .btn-light {
@@ -227,7 +226,7 @@ main {
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #89cff0;
+    background: #ff6700;
     color: #000; }
 
 .btn-dark {
@@ -252,7 +251,7 @@ main {
     transition: all 0.5s ease-out; }
     .boxes div:hover {
       padding: 0.5rem 1.5rem;
-      background: #89cff0;
+      background: #ff6700;
       color: #000; }
       .boxes div:hover span {
         color: #000; }
