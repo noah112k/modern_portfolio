@@ -1,8 +1,6 @@
 // Widescreens
 @include mediaXlg {
-  .projects-container {
-    grid-template-columns: repeat(4, 1fr);
-  }
+  
 }
 // Desktops & Laptops
 @include mediaLg {
